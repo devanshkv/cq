@@ -1,0 +1,13 @@
+Screen {
+    layout: vertical;
+}
+
+#grouping_options {
+    height: auto;
+    padding: 1;
+}
+
+#squeue_table {
+    height: 20; /* Define a height for the DataTable */
+    margin-top: 1;
+}
