@@ -1,0 +1,16 @@
+JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+              12345   compute   my_job   user1  R      1:30:00      1 node01
+              12346   compute  another   user2  R      0:15:23      2 node0[2-3]
+              12347   gpu_q    train_nn  user3 PD      0:00:00      1 (Resources)
+              12348   compute   data_proc user1 PD      0:00:00      4 (Priority)
+              12349   long_q    sim_run   user4  R    2-04:30:10      8 node[04-11]
+              12350   compute   test_mpi  user2 CG      0:05:00      1 node12
+              12351   gpu_q    render    user5  R      3:12:45      1 gpu01
+              12352   compute   compile   user1  R      0:02:17      1 node13
+              12353   long_q   analysis  user3 PD      0:00:00      2 (Dependency)
+              12354   compute   small_job user4  R      0:00:55      1 node14
+              12355   gpu_q    debug_gpu user5 PD      0:00:00      1 (QOSGrpCpuLimit)
+              12356   compute   interactive user2  R      0:45:13      1 node15
+              12357   long_q   backup    user1  R    1-00:00:00     1 node16
+              12358   compute   final_run user3  S      0:20:00      1 (Suspended)
+              12359   gpu_q    post_proc user5  R      0:55:30      1 gpu02
