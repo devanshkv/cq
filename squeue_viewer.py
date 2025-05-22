@@ -121,9 +121,12 @@ class SqueueViewerApp(App):
             self.update_table_data(group_by=group_by_option)
             print(f"RadioSet changed. Grouping by: {group_by_option}", flush=True)
 
-if __name__ == "__main__":
+def main():
+    """Runs the Textual application."""
     app = SqueueViewerApp()
-    # Use auto_pilot to run the app for a short duration and then exit
-    # This is suitable for testing in non-interactive environments
-    app.run(auto_pilot=True)
-    print("Application finished auto_pilot run.", flush=True)
+    app.run() # For the script entry point, run normally
+
+if __name__ == "__main__":
+    # When running the script directly (e.g. python squeue_viewer.py),
+    # it should now also use the main() function which starts the full app.
+    main()

@@ -1,0 +1,18 @@
+[project]
+name = "textual-squeue-viewer"
+version = "0.1.0"
+description = "A Textual application to display and group squeue output."
+authors = [
+    {name = "AI Assistant", email = "assistant@example.com"},
+]
+dependencies = [
+    "textual",
+]
+
+[project.scripts]
+squeue-viewer = "squeue_viewer:main"
+
+[project.optional-dependencies]
+test = [
+    "pytest"
+]
